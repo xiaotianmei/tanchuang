@@ -1,0 +1,543 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	团贷欢乐刮，最高送800元京东卡+518元红包
+</title>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js" charset="utf-8"></script> 
+        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="团贷网,互联网金融,P2P网贷,P2P理财">
+    <meta name="description" content="">
+    <!--动态计算rem-->
+    <script>
+        (function (doc, win) {
+            var dpr, rem, scale = 1;
+            var docEl = document.documentElement;
+            var metaEl = document.querySelector('meta[name="viewport"]');
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            metaEl.setAttribute('content', 'width=device-width,initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale + ',user-scalable=no,shrink-to-fit=no');
+            docEl.setAttribute('data-dpr', dpr);
+            var recalc = function () {
+                clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                if (document.body) {
+                    document.body.style.fontSize = docEl.style.fontSize;
+                }
+
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+		</script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+     
+    
+    <header>
+        <div class="logo bgSize"></div>
+        <!-- <a href="//m.tdw.cn/user/ogin.aspx" class="back">已注册？</a> -->
+    </header>
+
+    <section class="banner">
+        <p class="bannerTit"></p>
+        <img class="bannerImg" src="picture/banner_tit.png">
+        <div class="gj" id="gj">
+            <p>你还有 <span class='num gamenum'>2</span>次刮奖机会</p>
+            <a href="#">立即刮奖</a>
+            <p>已有 <span class='num'>173628</span>人参与刮奖</p>
+            <div id="518hb" class="hb_val">
+                <img src="picture/518.png" class="518hb-img">
+                <p class="gj_text">2888元体验金</p>
+                <a href="#" class="get-hb btn play_agin">还有<span class="gamenum">1</span>次刮奖机会</a>
+            </div>
+            <img src="picture/gua_hb.png" id="gua_hb">
+        </div>
+    </section>
+    <p class="my-prize">
+        <span class="icon"></span>
+        <span class="pz-val"></span>
+        <span class="tit">我的奖品</span>
+    </p>
+    <section class="input-box md1" id='input-box'>
+        <div class="input-phone">
+            <input type="text" name="phone" class="codeIpt" id="phone" placeholder="输入手机号码领取奖品" maxlength="11" />
+            <section class="pl20 error" id="dvPhoneError"></section>
+            <a href="#" class="get-518 btn" id="get-518">立即兑换</a>
+        </div>
+        <div class="other-input" id="other-ipnut">
+            <input type="password" name="passWord" id="passWord" class="codeIpt" placeholder="密码由6-16个字符（字母+数字组成）" maxlength="16" />
+            <section class="pl20 error" id="dvPwdError"></section>
+            <div class="input-wraper">
+                <input type="text" name="txtValidNumber" id="txtValidNumber" class="codeIpt s-input" placeholder="请输入图形验证码" maxlength="4" />
+                <img src="picture/validatecode.ashx" id="imgVcode" alt="验证码" onclick="reloadCode('/ajaxhander/ValidateCode.ashx')" class="imgVcode" />
+            </div>
+            <section class="pl20 error" id="dvValidNumber"></section>
+            <div class="input-wraper">
+                <input type="text" name="messCode" id="messCode" class="codeIpt s-input" placeholder="手机验证码" maxlength="6" />
+                <input type="button" id="btnSendMsg" class=" btnSendMsg" value="获取验证码" />
+            </div>
+            <section class="pl20 error" id="dvCodeError"></section>
+            <a href="javascript:;" class="btn get-518-reg " id="btnReg">立即兑换</a>
+        </div>
+        <div class="login-tips">
+            已有账号，请<a href="//m.tuandai.com/user/login.aspx">登录</a>
+        </div>
+    </section>
+
+    <section class="md3 md">
+        <img src="picture/tit-2.png" class="tit">
+        <h3><span class="name">用户名</span>  <span>中奖情况</span></h3>
+        <div id="Marquee_y">
+            <ul>
+                
+                   <li><span class='name-msg'>****9383</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****4577</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****4511</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****8496</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****5551</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****1740</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****3479</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****6266</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****1351</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****1053</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****5542</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****4788</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****3805</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****3944</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****4059</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****6965</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****0662</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****0015</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****2085</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****7317</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****2111</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****2055</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****1252</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****6748</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****6879</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****9389</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****5471</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****3518</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****5329</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****4012</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****1134</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****1559</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****8866</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****0572</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****2582</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****9852</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****4774</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****6636</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****2347</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****5477</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****5010</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****7808</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****3038</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****8780</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****2444</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****8195</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****3108</span><span class='money-msg'>518元+2888元红包大礼包</span></li>
+                
+                   <li><span class='name-msg'>****8613</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****9780</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+                   <li><span class='name-msg'>****9979</span><span class='money-msg'>800元京东卡大礼包</span></li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section class="md2 md" id="invite">
+        <img src="picture/tit-1.png" class="tit">
+        <div class="con_bg">
+            <div class="slideBox" id="slideBox">
+                <div class="bd">
+                    <div class="tempWrap" style="overflow: hidden; position: relative;">
+                        <ul>
+                          
+                            <li style="display: table-cell; vertical-align: top; width: 331px;">
+                                <h5>新手复投宝</h5>
+                                <div class="list-text">
+                                    <p class="num"><span class="big">12</span>%</p>
+                                    <p class="month-msg">
+                                        预期年化收益<br>
+                                        <span class="month">3个月/到期本息</span>
+                                    </p>
+                                </div>
+                                <a href="javascript:;" target="_blank" class="btn">新手专享</a>
+                            </li>
+                            
+                            <li style="display: table-cell; vertical-align: top; width: 331px;">
+                                <h5>新手复投宝</h5>
+                                <div class="list-text">
+                                    <p class="num"><span class="big">11</span>%</p>
+                                    <p class="month-msg">
+                                        预期年化收益<br>
+                                        <span class="month">1个月/到期本息</span>
+                                    </p>
+                                </div>
+                                <a href="javascript:;" target="_blank" class="btn">新手专享</a>
+                            </li>
+                            
+                            <li style="display: table-cell; vertical-align: top; width: 331px;">
+                                <h5>We计划B</h5>
+                                <div class="list-text">
+                                    <p class="num"><span class="big">9.5</span>%</p>
+                                    <p class="month-msg">
+                                        预期年化收益<br>
+                                        <span class="month">6个月/到期本息</span>
+                                    </p>
+                                </div>
+                                <a href="javascript:;" target="_blank" class="btn">新手专享</a>
+                            </li>
+                            
+                            <li style="display: table-cell; vertical-align: top; width: 331px;">
+                                <h5>We计划C</h5>
+                                <div class="list-text">
+                                    <p class="num"><span class="big">11</span>%</p>
+                                    <p class="month-msg">
+                                        预期年化收益<br>
+                                        <span class="month">12个月/到期本息</span>
+                                    </p>
+                                </div>
+                                <a href="javascript:;" target="_blank" class="btn">新手专享</a>
+                            </li>
+                            
+                                               
+                        </ul>
+                    </div>
+                </div>
+                <div class="hd">
+                    <span class="prev"></span>
+                    <span class="next"></span>
+                </div>
+            </div>
+
+            <p style="font-size: .25em; text-align: center; position: relative; top: 8px;">新手注册30天内，新手标限投3次，限额3万元</p>
+        </div>
+    </section>
+
+    <section class="md4 md">
+        <img src="picture/tit-3.png" class="tit">
+        <ul>
+            <li>
+                <img src="picture/md4-1.png">
+                <p>银行存管正式上线<br>
+                    投资更安心</p>
+            </li>
+            <li>
+                <img src="picture/md4-2.png">
+                <p>中国互联网金融协会<br />
+                   首批会员单位</p>
+            </li>
+            <li>
+                <img src="picture/md4-3.png">
+                <p>
+                    新一轮融资18亿元<br />
+                     
+                    4轮融资合计24.75亿元<br />
+                    
+                    第三方担保专款150,948,260元
+				
+                </p>
+            </li>
+            <li>
+                <img src="picture/md4-4.png">
+                 
+                <p>预期年化收益12.6%<br />
+                    理财收益更灵活</p>
+                
+            </li>
+        </ul>
+    </section>
+
+    <p class="bottom-p">
+        <a href="http://www.tuandai.com/">投资</a>有风险，入市需谨慎。最终收益以实际为准
+	
+    </p>
+
+    <a href="javascript:;" class="btn get-hb" id="reg-btn">立即刮卡赢奖励</a>
+
+    <footer id="footer1">
+        <div class="clearfix">
+            <div class="fl w50p text-center">
+                <p>2010- 2017 版权所有 © 
+                    <br />
+                    团贷网 粤ICP备16104116号-1   
+                    
+                </p>
+            </div>
+            <div class="fr w50p text-center">
+                <div class="icon"></div>
+                <p class="p-phone">1010-1218</p>
+                <p class="p-time">服务时间 09:00-22:00</p>
+            </div>
+        </div>
+        <div class="f-line"></div>
+    </footer>
+    
+    <footer class="footer2" id="footer2" style="display:none;">
+		<div class="clearfix">
+			<div class="fl w50p text-center">
+				<p>2010- 2017 版权所有 ©  <br />
+				       团贷网 粤ICP备16104116号-1   <br />
+				       东莞团贷网互联网科技服务有限公司
+				</p>
+			</div>
+			<div class="fr w50p text-center">
+				<div class="icon"></div>
+				<p class="p-phone">1010-1218</p>
+				<p class="p-time">服务时间 09:00-22:00</p>
+				<p class="p-time f16px">东莞市南城街道莞太路111号民间金融大厦1号楼28楼</p>
+			</div>
+		</div>
+		<div class="f-line"></div>
+	</footer>
+    <!--弹框-->
+    <!--恭喜你-->
+    <div class="alert hb_alert" id="hb" style="display: none;">
+        <div class="mask"></div>
+        <div class="alert-con alert_hb">
+            <div class="close isJoin_close"></div>
+            <div class="gongxini">恭喜你</div>
+            <p class="pzText">刮到<span class='num'>518</span>元红包+<span class='num'>2888</span>元理财金</p>
+            <a href="javascript:void(0);" class="alert_btn play_agin">继续刮奖x<span class="gamenum">2</span></a>
+        </div>
+    </div>
+
+    <script>
+        
+     </script>
+
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/jquery.cookies.2.2.0.js"></script>
+    
+        <script type="text/javascript" src="js/settuandaicookie.js"></script>
+    
+    <script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/weixinapi.js"></script>   
+    <script type="text/javascript" src="js/common.js"></script> 
+    <script type="text/javascript" src="js/tongjicode.js"></script>
+    
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/touchslide.1.1.js"></script>
+    <script src="js/jquery-jcmarquee.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/icheck.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/reg.js"></script>
+    <script type="text/javascript">
+        $(".close").on('click', function () {
+            $(this).parent().parent().hide();
+            if (gameTimes >= 0) {
+                gua_hb.hide();
+                hb.hide();
+            }
+        });
+
+        var gua_hb = $('#gua_hb'),
+			hb = $('#518hb'),
+			hb_alert_box = $('#hb'),
+            gameTimes = 1,
+			isMove = true,
+			prizeMsg = ["518元+2888元红包大礼包", "800元京东卡大礼包"],
+			myPrize = '',
+			gj = $("#gj"),
+			isGameover = true;
+
+        //prizeMsg.sort(randomsort);
+        
+        gj.on('touchmove', function (e) {
+            if (isMove && isGameover) {
+                isMove = false;
+                e.preventDefault();
+                hb.find('.gj_text').html(prizeMsg[gameTimes]);
+                gua_hb.show();
+                hb.show();
+                setTimeout(function () {
+                    gua_hb.hide();
+                }, 500);
+
+                setTimeout(function () {
+
+                    if (prizeMsg[gameTimes] == '谢谢参与') {
+                        hb_alert_box.find('.gongxini').html('谢谢参与');
+                        hb_alert_box.find('.pzText').hide();
+                        hb_alert_box.show();
+                    } else {
+                        hb_alert_box.find('.gongxini').html('恭喜你');
+                        hb_alert_box.find('.pzText').html('刮到' + prizeMsg[gameTimes]).show();
+                        hb_alert_box.show();
+                        myPrize += prizeMsg[gameTimes] + ','
+                    }
+                    hb_alert_box.find('.gamenum').html(gameTimes);
+                    gj.find('.gamenum').html(gameTimes);
+
+                    $('.pz-val').html(myPrize);
+                    if (gameTimes == 0) {
+                        hb_alert_box.find('.play_agin').html('立即兑奖');
+                        isGameover = false;
+                        gameTimes -= 1;
+                    } else {
+                        gameTimes -= 1;
+                    }
+                    isMove = true;
+                }, 1000);
+
+            }
+        });
+
+        $('body').on('click', '.play_agin', function (e) {
+            e.preventDefault();
+            hb_alert_box.hide();
+            if (gameTimes >= 0) {
+                gua_hb.hide();
+                hb.hide();
+            }
+            else {
+                $('#phone').focus();
+            }
+            
+        });
+        TouchSlide({
+            slideCell: "#slideBox",
+            mainCell: ".bd ul",
+            effect: "leftLoop",
+            autoPlay: true
+        });
+
+        //点击按钮显示其他输入框
+        $('#get-518').on('click', function (e) {
+            e.preventDefault();
+            var phoneErrorValue = $("#dvPhoneError").text();
+            if ($.trim(phoneErrorValue) == "") {
+                $(this).hide();
+                $('#phone_reg').find('.bg-bdtopBom1-red').removeClass('bg-bdtopBom1-red');
+                $('#other-ipnut').show();
+                $('.btn-wraper').show();
+            }
+        });
+
+        $('#invite').find('.btn').on('click', function (e) {
+            $('#phone').focus();
+        });
+
+        $('#reg-btn').on('click', function (e) {
+            $('#phone').focus();
+        });
+
+        $('#hb').on('click', '.hb-reg', function (e) {
+            e.preventDefault();
+            $('#phone').focus();
+        });
+
+        function randomsort(a, b) {
+            return Math.random() > .5 ? -1 : 1; //用Math.random()函数生成0~1之间的随机数与0.5比较，返回-1或1
+        }
+	</script>
+
+    <script type="text/javascript">
+        var Globals = {
+            IsLogin : false,
+            CurrentWebSiteUrl: '/phone/Register20170713_JDcard/index.aspx?tdfrom=bdjj-m-TY-TZLC-0003',
+            PortalWebsiteUrl: '//www.tuandai.com',
+            MobileWebsiteUrl:'//m.tuandai.com',
+            RegisterWebUrl:'//tg.tdw.cn'
+        };
+
+        function isCookieLogin() {
+            var cookieValue = jaaulde.utils.cookies.get("tuandaiw");
+            if (cookieValue != "" && cookieValue != null)
+                return true;
+            else
+                return false;
+        }
+        var nwbi_userName = "";
+        var nwbi_sysNo = "TDW";
+        var IsLogin = isCookieLogin();
+        if (IsLogin) {
+            var nickname = jaaulde.utils.cookies.get("TDWUserName");
+            nwbi_userName = nickname;
+        }
+        (function () {
+            var ta = document.createElement('script'); ta.type = 'text/javascript'; ta.async = true;
+            ta.src = ((("https:") == document.location.protocol) ? "https://" : "http://") + 'bilog.niiwoo.com/js/webaccess.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ta, s);
+        })();
+
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?6dff67da4e4ef03cccffced8222419de";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+
+        wxData.jsticketurl = "//m.tuandai.com";
+        wxData.isWxJsSDK = true;
+        wxData.debug = false;
+        function WeiXinShare(shareUrl,shareTitle,shareDesc,shareImgUrl,shareSuccessCallback){ 
+            wxData.url = shareUrl;
+            wxData.title = shareTitle;
+            wxData.desc = shareDesc;
+            wxData.img_url = shareImgUrl;
+            wxData.ShareCallBack = shareSuccessCallback; 
+        }
+    </script>
+</body>
+</html>
